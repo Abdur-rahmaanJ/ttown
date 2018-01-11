@@ -69,12 +69,12 @@ x = {}
 with open('data/data_.json', 'r') as f:
     x = json.load(f)
 
-file = io.open('html/commertial_'+str(int(time.time()))+'.html', 'w', encoding="utf-8")
+file = io.open('html/misc_'+str(int(time.time()))+'.html', 'w', encoding="utf-8")
     
 plugins = [] 
 for key in x:
     author, descrip, images, name, res = '', '', '#', '', []
-    if x[key]['tag'] == 'Commercial':
+    if x[key]['tag'] == 'Miscellaneous':
         ress = ''
         name = key
         author = x[key]['author']
